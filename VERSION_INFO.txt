@@ -1,0 +1,44 @@
+================================================================================
+CAMPUSSYNC - CAMPUS & CLUB EVENT MANAGEMENT SYSTEM
+INTERNAL CODE DATE & PACKAGE METADATA
+================================================================================
+Internal Code Date : November 10, 2026
+Internal Code Time : 16:33:25 UTC
+Build Timestamp    : 2026-11-10T16:33:25Z
+Package Version    : v1.3.0-stable
+Institution        : Apex Institute of Technology
+Department         : Office of Student Affairs & Campus Life
+
+INCLUDED FILES & ARCHITECTURE:
+--------------------------------------------------------------------------------
+1. database.sql
+   - Complete Relational SQL Schema (DDL) and initial seed data (DML)
+   - Compatible with MySQL, MariaDB, XAMPP, WAMP, and phpMyAdmin
+   - Contains: users, clubs, events, event_registrations, event_feedback, announcements
+
+2. PROJECT_README.md
+   - Comprehensive local setup instructions (Node.js & XAMPP guide)
+   - Database import walkthrough for MySQL & phpMyAdmin
+   - Credentials list for Student, Faculty, and Admin demo tiers
+
+3. BUILD_INFO.json
+   - Machine-readable release metadata with timestamps, table counts, and environment details
+
+4. Full Application Source Code:
+   - src/components/   : Role portals (Student, Faculty, Admin), QR Passes, Certificates
+   - src/context/      : State store with password-protected authentication & persistence
+   - src/types/        : TypeScript interface models
+   - src/data/         : Mock event and club database
+   - server.ts         : Production Node.js/Express server
+   - vite.config.ts    : Vite bundler configuration
+   - package.json      : NPM package dependencies and scripts
+
+DEFAULT AUTHENTICATION (CAMPUS DIRECTORY SSO):
+--------------------------------------------------------------------------------
+- Student Portal    : aarav.sharma@apex.edu.in    / 22BCSE104    [Campus SSO Verified]
+- Faculty Portal    : sunita.rao@apex.edu.in      / EMP-FAC-042  [Campus SSO Verified]
+- Dean / Admin      : dean.studentaffairs@apex.edu.in / EMP-ADM-001 [Campus SSO Verified]
+
+================================================================================
+Generated automatically during project packaging.
+================================================================================

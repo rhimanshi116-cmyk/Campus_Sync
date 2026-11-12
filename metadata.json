@@ -1,0 +1,6 @@
+{
+  "name": "CampusSync - Campus & Club Event Management System",
+  "description": "Centralized campus event and student club management platform featuring role-based portals for Students, Faculty, and Admins, event registration with digital QR passes, club discovery, attendance tracking, certificates, and analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

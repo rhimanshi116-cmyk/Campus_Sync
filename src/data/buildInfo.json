@@ -1,0 +1,42 @@
+{
+  "project": "CampusSync - Campus & Club Event Management System",
+  "version": "1.3.0",
+  "internalCodeDate": "November 10, 2026",
+  "internalCodeTime": "16:33:25 UTC",
+  "buildTimestamp": "2026-11-10T16:33:25Z",
+  "environment": {
+    "node": "v22.x",
+    "react": "19.0",
+    "vite": "8.x",
+    "tailwind": "4.x"
+  },
+  "database": {
+    "file": "database.sql",
+    "compatibility": [
+      "MySQL 8.0+",
+      "MariaDB",
+      "PostgreSQL",
+      "phpMyAdmin"
+    ],
+    "tables": [
+      "users",
+      "clubs",
+      "events",
+      "event_registrations",
+      "event_feedback",
+      "announcements"
+    ],
+    "seedRecords": {
+      "users": 3,
+      "clubs": 6,
+      "events": 6,
+      "registrations": 3,
+      "feedback": 1,
+      "announcements": 2
+    }
+  },
+  "authentication": {
+    "type": "Single Sign-On (SSO)",
+    "method": "Institutional Directory ID"
+  }
+}

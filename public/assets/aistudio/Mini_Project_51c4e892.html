@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minor Project Proposal - Campus Event & Club Management System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f2f4f7;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 30px auto;
+            padding: 25mm 22mm;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #222;
+            padding-bottom: 18px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        h2 {
+            font-size: 21px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h3 {
+            font-size: 17px;
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        ul,
+        ol {
+            margin: 8px 0 15px 25px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .project-title {
+            text-align: center;
+            margin: 20px 0 30px;
+        }
+
+        .project-title h2 {
+            border: none;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .tech-list {
+            background: #f7f8fa;
+            border-left: 4px solid #333;
+            padding: 15px 20px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+
+        @media print {
+
+            body {
+                background: white;
+            }
+
+            .page {
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+                padding: 15mm 18mm;
+                box-shadow: none;
+            }
+
+            h2 {
+                page-break-after: avoid;
+            }
+
+            h3 {
+                page-break-after: avoid;
+            }
+
+            ul,
+            ol {
+                page-break-inside: avoid;
+            }
+
+            .tech-list {
+                page-break-inside: avoid;
+            }
+
+            .footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>Minor Project Proposal</h1>
+            <p>Web Development</p>
+        </div>
+
+        <!-- Project Title -->
+        <div class="project-title">
+            <h2>Campus Event &amp; Club Management System</h2>
+        </div>
+
+        <!-- Introduction -->
+        <section>
+            <h2>1. Introduction</h2>
+
+            <p>
+                The Campus Event &amp; Club Management System is a web-based
+                application designed to provide a centralized platform for
+                managing college events and student clubs.
+            </p>
+
+            <p>
+                The main purpose of the system is to make it easier for students
+                and faculty members to access information about campus events,
+                participate in activities, and manage event-related information
+                from a single platform.
+            </p>
+        </section>
+
+        <!-- Problem Statement -->
+        <section>
+            <h2>2. Problem Statement</h2>
+
+            <p>
+                In colleges, information about events, workshops, competitions,
+                club activities, and other programs may be shared through
+                different channels such as notices, messaging groups, or other
+                platforms. This can make it difficult for students to keep track
+                of upcoming activities and registrations.
+            </p>
+
+            <p>
+                The proposed system will provide a single platform where event
+                and club-related information can be organized and accessed
+                easily.
+            </p>
+        </section>
+
+        <!-- Users -->
+        <section>
+            <h2>3. Users of the System</h2>
+
+            <p>
+                The system will have three types of users:
+            </p>
+
+            <h3>3.1 Student</h3>
+
+            <p>Students will be able to:</p>
+
+            <ul>
+                <li>Register and login</li>
+                <li>View upcoming events</li>
+                <li>Search and filter events</li>
+                <li>View event details</li>
+                <li>Register for events</li>
+                <li>View their registered events</li>
+                <li>Explore different college clubs</li>
+                <li>Provide feedback for events</li>
+            </ul>
+
+            <h3>3.2 Faculty</h3>
+
+            <p>Faculty members will be able to:</p>
+
+            <ul>
+                <li>Register/login to the system</li>
+                <li>View campus events and clubs</li>
+                <li>Create and manage events</li>
+                <li>View students registered for their events</li>
+                <li>Monitor event participation</li>
+                <li>View feedback related to their events</li>
+            </ul>
+
+            <h3>3.3 Admin</h3>
+
+            <p>The administrator will manage the overall system and will be able to:</p>
+
+            <ul>
+                <li>Manage students and faculty</li>
+                <li>Manage events</li>
+                <li>Manage clubs</li>
+                <li>View registrations</li>
+                <li>Manage system information</li>
+                <li>View overall participation and feedback</li>
+            </ul>
+        </section>
+
+        <!-- Main Modules -->
+        <section>
+            <h2>4. Main Modules</h2>
+
+            <p>
+                The proposed system will contain the following modules:
+            </p>
+
+            <ol>
+                <li>User Registration and Login</li>
+                <li>Student Module</li>
+                <li>Faculty Module</li>
+                <li>Admin Module</li>
+                <li>Event Management</li>
+                <li>Club Management</li>
+                <li>Event Registration</li>
+                <li>Feedback Management</li>
+                <li>Database Management</li>
+            </ol>
+        </section>
+
+        <!-- Technologies -->
+        <section>
+            <h2>5. Proposed Technologies</h2>
+
+            <div class="tech-list">
+                <ul>
+                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Dynamic Data:</strong> AJAX / JSON / API</li>
+                    <li><strong>Backend:</strong> Node.js with Express</li>
+                    <li><strong>Database:</strong> MySQL</li>
+                    <li><strong>Authentication:</strong> Login, sessions and role-based access</li>
+                    <li><strong>Version Control:</strong> Git and GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Expected Outcome -->
+        <section>
+            <h2>6. Expected Outcome</h2>
+
+            <p>
+                The final application will provide a centralized and
+                user-friendly platform for managing college events and clubs.
+            </p>
+
+            <p>
+                Students will be able to discover and participate in campus
+                activities, faculty members will be able to organize and monitor
+                events, and administrators will be able to manage the overall
+                system.
+            </p>
+
+            <p>
+                The project will also demonstrate concepts such as responsive
+                web design, JavaScript, database connectivity, CRUD operations,
+                authentication, API/AJAX-based data handling, testing, and
+                deployment.
+            </p>
+        </section>
+
+        <!-- Future Enhancement -->
+        <section>
+            <h2>7. Scope for Future Enhancement</h2>
+
+            <p>
+                In the future, the system can be extended with features such as:
+            </p>
+
+            <ul>
+                <li>Event notifications</li>
+                <li>Email notifications</li>
+                <li>QR-based event attendance</li>
+                <li>Event certificates</li>
+                <li>Advanced participation reports</li>
+                <li>Mobile application integration</li>
+            </ul>
+        </section>
+
+        <div class="footer">
+            Minor Project Proposal &nbsp;|&nbsp;
+            Campus Event &amp; Club Management System
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
